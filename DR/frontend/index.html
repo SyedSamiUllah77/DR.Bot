@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical RAG Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Medical RAG Chatbot</h1>
+            <p class="subtitle">Ask me about medical conditions and symptoms</p>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Medical Assistant:</strong>
+                        <p>Hello! I'm your medical information assistant. Ask me about symptoms, conditions, or general health questions. Please note: This is for informational purposes only and not a substitute for professional medical advice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Type your medical question here..."
+                    autocomplete="off"
+                >
+                <button id="sendButton">Send</button>
+            </div>
+        </div>
+
+        <footer>
+            <p class="disclaimer">⚠️ Disclaimer: This chatbot provides general information only. Always consult a healthcare professional for medical advice.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
